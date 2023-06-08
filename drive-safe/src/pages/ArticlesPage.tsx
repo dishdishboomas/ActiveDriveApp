@@ -1,12 +1,17 @@
-import React from 'react';
+import '../App.css';
 
 const ArticlesPage = () => {
   return (
-    <div>
-      <h1>Link to article 1</h1>
-      <h2>Link to article 2</h2>
-      <h3>Link to article 3</h3>
-      <h3>Link to article 4</h3>
+    <div className='articles-div'>
+      <h1>Interesting Articles for gaining free tokens:</h1>
+      <p/>
+      <a href="https://mui.com/material-ui/react-link/">Interesting article on blablab bla bla</a>
+      <br/>
+      <a href="https://mui.com/material-ui/react-link/">An article in a huge bla bla bla</a>
+      <br/>
+      <a href="https://mui.com/material-ui/react-link/">Interesting bla blablabala</a>
+      <br/>
+      <a href="https://mui.com/material-ui/react-link/">An article about a bkabbkabb bla bla</a>
     </div>
   );
 };

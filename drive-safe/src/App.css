@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Set the background color for the app */
+body {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the app container */
+.app {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+/* Styles for the header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: #4caf50;
+}
+
+.app-navbar {
+  background-color: #4caf50;
+}
+
+/* Styles for the company name */
+.company-name {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles for the hello text */
+.hello-text {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Style for the company name */
+.company-name {
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the main content */
+.app-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
+.tokens-text {
+  color: #4caf50;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20px;
+  display: block;
+}
+
+
+/* Style for the circle container */
+.circle-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: -270px;
+}
+
+/* Style for the main button */
+.circle {
+  background-color: #4caf50;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+/* Style for the spinning animation */
+.calculating {
+  animation: spin 0.6s linear;
+}
+
+/* Style for the spinner */
+.spinner {
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s infinite linear;
+}
+
+/* Style for the button text */
+.button-text {
+  color: white;
+  font-size: 18px;
+  transition: opacity 0.3s;
+}
+
+/* Style for the running timer */
+.running {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the footer */
+.app-footer {
+  background-color: #fff;
+  padding: 10px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style for the navbar */
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/* Style for the nav list */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer{
+  background-color: #fff;
+  bottom: 0;
+}
+
+.articles-div{
+  text-align: center;
+}
+
+/* Style for the nav items */
+.nav-item {
+  padding: 10px;
+  font-size: 16px;
+  color: #4caf50;
+  cursor: pointer;
+}
+
+/* New styles for the button */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* New styles for the button text */
+.button-text {
+  color: white;
+  font-size: 24px;
+}
+
+/* New styles for the running timer */
+.running {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* New styles for the spinner */
+.spinner {
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s infinite linear;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
